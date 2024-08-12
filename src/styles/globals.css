@@ -1,0 +1,25 @@
+:root {
+  --dark: #000000;
+  --light: #FFFFFF;
+  
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+ background-color: var(--dark);
+ color: var(--light);
+}
+
+
+@media (prefers-color-scheme: dark) {
+ body{
+  gap: 0;
+ }
+}
