@@ -1,7 +1,9 @@
 :root {
   --dark: #000000;
   --light: #FFFFFF;
-  
+  --backgroung: #4762FF;
+  --background-hover: #001ea6;
+;
 }
 
 
@@ -13,8 +15,8 @@
 
 
 body {
- background-color: var(--dark);
- color: var(--light);
+ background-color: var(--light);
+ color: var(--dark);
 }
 
 

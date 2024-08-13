@@ -1,9 +1,14 @@
-import NextAuth, { NextAuthOptions } from 'next-auth'
+import NextAuth from 'next-auth/next'
 import GoogleProvider from 'next-auth/providers/google'
 
-
-export const authOptions: NextAuthOptions = {
+ const handler = NextAuth ( {
     providers: [
-      
-    ]
-}
+      GoogleProvider( {
+        clientId: process.env.GOOGLE_CLIENT_ID?? "",
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
+
+      }),
+    ],
+});
+
+export {handler as GetAnimationsOptions, handler as POST}
