@@ -1,0 +1,29 @@
+
+.container {
+    border-radius: 16px; 
+    padding: 16px;
+    flex: 1; 
+    min-width: 130px; 
+}
+
+.container:nth-child(odd) {
+    background-color: var(--backgroung); 
+}
+
+.container:nth-child(even) {
+    background-color: var(--background-hover);
+}
+
+.more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataSpan{
+    font-size: 0.65rem;
+    background-color: var(--light);
+    padding: 4px 8px;
+    border-radius: 15px;
+    color: var(--mediam-blue);
+}
