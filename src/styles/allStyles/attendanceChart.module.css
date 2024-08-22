@@ -1,0 +1,25 @@
+.container{
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 16px;
+    height: 100%;
+}
+
+.container:hover {
+    /* cursor: pointer; */
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 2px 15px var(--ring-color);
+    -moz-box-shadow: 0px 2px 15px var(--ring-color);
+    box-shadow: 0px 2px 15px var(--ring-color);
+  }
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title> h1{
+    font-size: 1.125rem;
+    font-weight: 600;
+}

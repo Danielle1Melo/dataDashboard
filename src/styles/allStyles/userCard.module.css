@@ -1,9 +1,10 @@
 
 .container {
     border-radius: 16px; 
-    padding: 16px;
+    padding: 1rem;
     flex: 1; 
-    min-width: 130px; 
+    min-width: 8.125rem; 
+    transition: all 0.3s;
 }
 
 .container:nth-child(odd) {
@@ -12,6 +13,27 @@
 
 .container:nth-child(even) {
     background-color: var(--background-hover);
+}
+
+.container:hover {
+    /* cursor: pointer; */
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 2px 15px var(--backgroung);
+    -moz-box-shadow: 0px 2px 15px var(--backgroung);
+    box-shadow: 0px 2px 15px var(--backgroung);
+  }
+
+.container > h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: var(--light);
+}
+.container > h2{
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--light);
 }
 
 .more{
@@ -23,7 +45,7 @@
 .dataSpan{
     font-size: 0.65rem;
     background-color: var(--light);
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     border-radius: 15px;
     color: var(--mediam-blue);
 }
