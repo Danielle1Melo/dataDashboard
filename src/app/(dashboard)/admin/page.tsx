@@ -3,6 +3,9 @@ import UserCard from "@/components/userCard/UserCard";
 import styled from "../../../styles/allStyles/admin.module.css";
 import CountChart from "@/components/countChart/CountChart";
 import AttendanceChart from "@/components/attendanceChart/AttendanceChart";
+import FinanceChart from "@/components/financeChart/FinanceChart";
+import EventCalendar from "@/components/eventCalendar/EventCalendar";
+import Annoucements from "@/components/announcements/Announcements";
 
 export default function AdminPage() {
   return (
@@ -25,10 +28,17 @@ export default function AdminPage() {
           </div>
         </div>
 
-
+        <div>
+            <FinanceChart />
+        </div>
       </div>
 
-      <div className={styled.right}>r</div>
+      <div className={styled.eventCalendar}>
+        <EventCalendar />
+        <Annoucements />
+      </div>
+
+      
     </div>
   );
 }

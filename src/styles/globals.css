@@ -2,12 +2,14 @@
   --dark: #000000;
   --light: #ffffff;
   --title-gray: #9ca3af;
+  --gray: #4B5563;
   --labels: #6b7280;
   --ring-color: #D1D5DB;
   --gray-100: #92969e2a;
   --backgroung: #4762ff;
   --background-hover: #001ea6;
   --mediam-blue: #374bfc;
+  --card-blue: #374bfc94;
 }
 
 * {

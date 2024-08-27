@@ -41,6 +41,13 @@
   height: 450px;
 }
 
+.eventCalendar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
@@ -65,6 +72,10 @@
 
     .attendanceChart {
       width: 66.6667%;
+    }
+
+    .eventCalendar{
+      width: 33.3333%;
     }
   }
 }
